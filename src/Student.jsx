@@ -1,6 +1,10 @@
 function Student(props) {
   return (
-    <h1>This is a student component</h1>
+    <>
+      <h1>{props.student.name}</h1>
+      <p>{props.student.bio}</p>
+      {props.student.scores.map((score, idx) => <p>This is a score component</p>)}
+    </>
   )
 }
 
