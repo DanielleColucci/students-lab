@@ -1,6 +1,8 @@
 function Score(props) {
   return (
-    <p>This is a score component</p>
+    <div>
+      <p>{props.scoreObj.date}: {props.scoreObj.score}</p>
+    </div>
   )
 }
 
