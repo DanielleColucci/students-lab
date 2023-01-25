@@ -1,4 +1,5 @@
 import './App.css';
+import Student from './Student';
 import { useState } from 'react';
 
 function App() {
@@ -68,7 +69,7 @@ function App() {
 
   return (
     <div>
-
+      {students.map((student, idx) => <Student key={idx} student={student}/>)}
     </div>
   );
 }
